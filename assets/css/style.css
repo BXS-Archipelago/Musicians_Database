@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light|Work Sans 900');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light');
 
 
 *{  
@@ -208,35 +208,7 @@ nav ul li{
     }
 
 }
-/*--------------------------------------------------------------Small Screen*/
-@media screen and (max-width: 400px) {
-    nav {
-        padding: 0;
-    }
 
-.logo{
-    padding: 25px 25px;
-}
-
-    .logo-title {
-        font-size: 30px;
-    }
-     .logo-title-strong {
-        font-size: 40px;
-    }
-
-    nav ul li a {
-        font-size: 23px;
-    }
-
-    .diag-left {
-        display: none;
-        }
-    .diag-right {
-        display: none;
-    }    
-
-}
 /*----------------------------------------------------------BurgerIcon setting*/
 
 #nav:checked + .nav-btn{
@@ -334,31 +306,14 @@ footer {
 
 
 
-@media screen and (max-width: 600px)
-{ 
-    footer {
-        height: 12vh;
-        bottom: 0;
-        }
-
-    .tagline {
-        font-size: 10px;
-        letter-spacing: 2px;
-    }
-.social-icons i {
-   font-size: 14px;
-   line-height: 1.2;
-
-}
-}
 
 /*--------------------------------------index page image & text*/
 
 .front-img {
     float: left;
-    background: url("../img/fever_ray.jpg");
-    width: 500px;
-    height: 500px;
+    background: url("../img/fever-ray-fb.jpg");
+    width: 400px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative ;
@@ -374,7 +329,7 @@ footer {
     
 }
 .btn-gal{
-    background-color:#EFEFEF;
+    background-color:transparent;
     border: 2px solid #000;
     border-radius: 3px;
     padding: 15px 32px;
@@ -408,19 +363,22 @@ footer {
     }     
 
     .txt-container {
-        color: brown;
+        color: #000;
         font-family: sans-serif;
         font-weight: 900;
         padding: 40px 50px;
     }
 
     .txt-container .front-txt {
-        font-size: 50px;
-        font-family: "Work Sans" sans-serif;
-    }
+        font-size: 80px;
+        font-family: "Architects Daughter", sans-serif;
+        text-shadow: 3px 2px silver;
+          }
 
     .txt-container span {
+        font-size: 16px;
        font-style: italic;
+       text-shadow: 1px 1px silver;
     }
 /*--------------------------------------Gallery page image & text*/
 .card {
@@ -517,8 +475,63 @@ footer {
     text-align: center;
 }
 
+/*--------------------------------------------------------------Small Screen*/
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 0;
+    }
 
+.logo{
+    padding: 25px 25px;
+}
 
+    .logo-title {
+        font-size: 30px;
+    }
+     .logo-title-strong {
+        font-size: 40px;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    .front-img {
+        margin: 0;
+    }
+
+    .txt-container .front-txt {
+        font-size: 40%;
+        display: inline-block;
+        position: relative;
+    }
+    .txt-container span {
+        font-size: 60%;
+    }
+
+    .diag-left {
+        display: none;
+        }
+    .diag-right {
+        display: none;
+    }    
+
+     footer {
+         position: absolute;
+        height: 12vh;
+        bottom: 0;
+        }
+
+    .tagline {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .social-icons i {
+        font-size: 14px;
+        line-height: 1.2;
+}
+
+}
 
 
 
