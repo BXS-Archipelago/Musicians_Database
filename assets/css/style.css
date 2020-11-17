@@ -6,7 +6,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    padding-bottom: 68px;
+    margin-bottom: 140px;
 }
 
 .base-img { 
@@ -250,14 +250,17 @@ nav ul li{
 /*-------------------------------------------------Footer area*/
 
 footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    bottom: 0;
-    height: 12vh;
+    bottom: 0px;
+    left: 0px;
+    height: 125px;
+    border-top: 10px solid #ff3b3f;
     text-align: center;
-    display: block;
+    display: flex;
     overflow: hidden;
     box-sizing: border-box;
+    
           }
 
 .diag-left {
@@ -407,12 +410,11 @@ footer {
 .card {
     height: 450px;
     width: 450px;
-    background-color: #a9a9a9;
+    background-color: #313333;
     transform: scale(0.7);
     border-radius: 8px;
     box-shadow: 0 0 80px 1px #FF3B3F;
-    
-}
+    }
 
 .info {
     width: 100%;
@@ -426,7 +428,8 @@ footer {
     font-family: "Architects daughter", sans-serif;
     font-size: 45px;
     font-weight: bolder;
-    color: #00008f;
+    color: #CAEBF2;
+    text-shadow: 0px 0px 2px #FF0000;
     position: absolute;
     top: 100px;
     letter-spacing: 3px;
@@ -437,7 +440,7 @@ footer {
    font-family:  Arial, Helvetica, sans-serif;
     color: #FF3B3F;
     position: absolute;
-    top: 140px;
+    top: 150px;
 }
 
 .divider {
@@ -451,10 +454,11 @@ footer {
 .more {
     position: absolute;
     top: 220px;
-    color: #00008f;
+    color: #CAEBF2;
     line-height: 28px;
     font-size: 18px;
     text-align: center;
+   
 }
 
 .card-btn {
@@ -463,11 +467,14 @@ footer {
     background-color: #FF3B3F;
     border: none;
     font-size: 20px;
+    font-weight: bolder;
     padding: 13px 25px; 
     cursor: pointer;
     color: #00008f;
 }
 
+/*-------------------------------------------------------------------*/
+/*--------------------------------------------List of Gallery Photos*/
 .pic1 {
     height: 100%;
     width: 100%;
@@ -486,12 +493,216 @@ footer {
     border-radius: 40%;
 }
 
+
+.pic2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/ane_brun2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic2 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+.pic3 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/elperrodelmar2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic3 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+.pic4 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/fever_ray3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic4 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+.pic5 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/hannehukkelberg2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic5 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+.pic6 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/jennie_abrahamson1a.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic6 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+.pic7 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/ninakinert2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic7 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+
+.pic8 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/olivera1a.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic8 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+
+.pic9 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/stina_nordenstam2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic9 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+.pic10 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/susannesundfor2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic10 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+
+.pic11 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/tina_dico2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic11 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+
+.pic12 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/silje_nes1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+.card:hover .pic12 {
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 40%;
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------- End List of Gallery Photos*/
+
 .card a {
     position: absolute;
     bottom:-70px;
     font-size: 25px;
-    color: green;
-    background: white;
+    color: #ff3b3f;
+    background: #CAEBF2;
     width: 100%; 
     padding: 12px 0;
     font-weight: 600;
