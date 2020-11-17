@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light');
 
 
-*{  
+body{  
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    min-height: 100vh;
+    padding-bottom: 68px;
 }
 
 .base-img { 
@@ -15,7 +17,7 @@
     background-position: center ;
     background-attachment: fixed;
         }
-
+/*--------------------------------------------------------------------------*/
 /*------------------------------------------------------------Logo & Nav Bar*/
 
 nav {position: relative;
@@ -91,10 +93,10 @@ nav ul li a {
      font-weight: bold;
      letter-spacing: 2px;
 }
-
+/*----------------------------------------------------------------------*/
 /*-----------------------------------------------------------Media Query*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 993px) {
     nav {
         padding: 10px 10px;
     }
@@ -103,10 +105,10 @@ nav ul li a {
         padding: 20px 15px;
     }
     .logo-title {
-        font-size: 40px;
+        font-size: 55px;
     }
      .logo-title-strong {
-        font-size: 50px;
+        font-size: 70px;
     }
 nav ul li{
     padding: 12px 5px;
@@ -146,7 +148,7 @@ nav ul li{
         text-align: right;
         margin-bottom: 10px;
     }
-
+/*-------------------------------------------------------------------------*/
 /*--------------------------------------------------------Drop-down Sequence*/
 
     .nav-wrapper ul li:nth-child(1) a {
@@ -208,7 +210,7 @@ nav ul li{
     }
 
 }
-
+/*-------------------------------------------------------------------------*/
 /*----------------------------------------------------------BurgerIcon setting*/
 
 #nav:checked + .nav-btn{
@@ -244,9 +246,8 @@ nav ul li{
     display: none;
     }
 
-
-
-/*--------------------------------------Footer area*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------Footer area*/
 
 footer {
     position: absolute;
@@ -305,30 +306,46 @@ footer {
      }
 
 
-
-
+/*-------------------------------------------------------------*/
 /*--------------------------------------index page image & text*/
+.front-box {
+    display: flex;
+    flex-direction: row;
+}
 
 .front-img {
-    float: left;
     background: url("../img/fever-ray-fb.jpg");
     width: 400px;
     height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative ;
     border-radius: 30%;
     border: 1px solid #FF0000;
     padding: 50px;
     margin: 20px 70px 20px 20px;
-   
-   }
-.txt-container {
-    position: relative;
-    padding: 40px;
-    
-}
+    flex-direction: row;
+      }
+
+      .txt-container {
+       color: #000;
+        font-family: sans-serif;
+        font-weight: 900;
+        position: relative;
+       
+    }
+
+      
+
+/*--------------------------------------------------------Spotify link for Mobile Only*/
+.sptfy-1 {
+    position: absolute;
+       display: none;
+       padding: 8px;
+       top: 90px;
+}      
+/*-----------------------------------------------------------End-spotify*/
 .btn-gal{
+
     background-color:transparent;
     border: 2px solid #000;
     border-radius: 3px;
@@ -336,9 +353,8 @@ footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     transition: 0.4s;
-    margin-left: 32px;
+    margin: 32px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -347,7 +363,7 @@ footer {
     .btn-gal a {
         color: #000;
         letter-spacing: 2px;
-        font-size: 23px;
+        font-size: 14px;
         font-weight: bolder;
         font-family: sans-serif;
         text-decoration: none;
@@ -362,25 +378,32 @@ footer {
         color: #252525;
     }     
 
-    .txt-container {
-        color: #000;
-        font-family: sans-serif;
-        font-weight: 900;
-        padding: 40px 50px;
-    }
+    
 
-    .txt-container .front-txt {
-        font-size: 80px;
+   .front-txt {
+        font-size: 25px;
+        font-weight: bolder;
         font-family: "Architects Daughter", sans-serif;
-        text-shadow: 3px 2px silver;
+        text-shadow: 3px 2px #fff;
+        text-align: center;
           }
 
-    .txt-container span {
-        font-size: 16px;
+    .span {
+       font-weight: bolder;
+       font-size: 17px;
        font-style: italic;
-       text-shadow: 1px 1px silver;
+       text-shadow: 1px 1px #fff;
+       text-align: center;
+       margin-top: 10px;
     }
 /*--------------------------------------Gallery page image & text*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     height: 450px;
     width: 450px;
@@ -388,6 +411,7 @@ footer {
     transform: scale(0.7);
     border-radius: 8px;
     box-shadow: 0 0 80px 1px #FF3B3F;
+    
 }
 
 .info {
@@ -447,7 +471,7 @@ footer {
 .pic1 {
     height: 100%;
     width: 100%;
-    background-image: url("../img/ane_brun2.png");
+    background-image: url("../img/agnes_obel1a.png");
     background-repeat: no-repeat;
     position: absolute;
     bottom:0;
@@ -475,6 +499,23 @@ footer {
     text-align: center;
 }
 
+/*--------------------------------------------------------------Tablet Screen*/
+@media screen and (max-width: 993px) {
+.front-img {
+    float: left;
+    background: url("../img/fever-ray-fb.jpg");
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    border-radius: 30%;
+    border: 1px solid #FF0000;
+    padding: 50px;
+    margin: 70px 70px 20px 20px;
+      }
+
+}
 /*--------------------------------------------------------------Small Screen*/
 @media screen and (max-width: 400px) {
     nav {
@@ -497,18 +538,47 @@ footer {
     }
 
     .front-img {
-        margin: 0;
+       display: none;
     }
 
-    .txt-container .front-txt {
-        font-size: 40%;
-        display: inline-block;
-        position: relative;
+    .sptfy-1 {
+        display: block;
+        align-content: center;
+        padding-left: 20px;
     }
+
+   .txt-container {
+       display: inline-block;
+       width: 100%;
+       vertical-align: middle;
+       position: absolute;
+       top: 340px;
+       left: 2px;
+       padding: 8px;
+        text-align: center;
+   }
     .txt-container span {
-        font-size: 60%;
-    }
+        font-size: 7px;
+       text-shadow: 0px 0px 1px #FF0000;
+           }
 
+    .front-txt{
+        margin-bottom: 0;
+    }       
+
+    .btn-gal{
+    padding: 4px 8px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    top: 440px;
+    left: 113px;
+
+    margin-left: 0;
+    }
+    .btn-gal a{ 
+     font-size: 12px;
+}
     .diag-left {
         display: none;
         }
@@ -517,7 +587,7 @@ footer {
     }    
 
      footer {
-         position: absolute;
+        position: absolute;
         height: 12vh;
         bottom: 0;
         }
