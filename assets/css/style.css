@@ -93,6 +93,16 @@ nav ul li a {
      font-weight: bold;
      letter-spacing: 2px;
 }
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------------------------------*/
 /*-----------------------------------------------------------Media Query*/
 
@@ -152,7 +162,7 @@ nav ul li{
 /*--------------------------------------------------------Drop-down Sequence*/
 
     .nav-wrapper ul li:nth-child(1) a {
-        transition-delay: 0.2s;
+        transition-delay: 0.3s;
     }
 
     .nav-wrapper ul li:nth-child(2) a {
@@ -161,6 +171,10 @@ nav ul li{
 
     .nav-wrapper ul li:nth-child(3) a {
         transition-delay: 0.5s;
+    }
+
+    .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.6s;
     }
 
    nav ul li:not(:first-child){
@@ -246,6 +260,77 @@ nav ul li{
     display: none;
     }
 
+
+/*-------------------------------------------------------------*/
+/*--------------------------------------index page image & text*/
+.intro-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    
+}
+
+.img-box {
+    background-image: url("../img/fever-ray-fb.jpg");
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    border-radius: 10%;
+      
+}
+
+.text-col {
+    padding: 15px;
+    height: 80%;
+}
+
+.text-col h4 {
+    font-family: "Architects Daughter", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #ff3b3f;
+    text-shadow: 1px 2px 2px #000;
+    letter-spacing: 1.4px;
+    margin-left: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin: 10px 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ff3b3f;
+    text-align: justify;
+}
+
+.glry-btn {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background: #333333;
+    color: #A9A9A9;
+    width: 120px;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #FF3B3F;
+   align-content: center;
+    margin-left: 20px;
+}
+/*--------------------------------------------------------Spotify link for Mobile Only*/
+
+.sptfy-1 {
+    position: absolute;
+       display: none;
+       padding: 8px;
+       top: 90px;
+}      
+/*-----------------------------------------------------------End-spotify*/
+
 /*-------------------------------------------------------------*/
 /*-------------------------------------------------Footer area*/
 
@@ -309,96 +394,8 @@ footer {
      }
 
 
-/*-------------------------------------------------------------*/
-/*--------------------------------------index page image & text*/
-.front-box {
-    display: flex;
-    flex-direction: row;
-}
 
-.front-img {
-    background: url("../img/fever-ray-fb.jpg");
-    width: 400px;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 30%;
-    border: 1px solid #FF0000;
-    padding: 50px;
-    margin: 20px 70px 20px 20px;
-    flex-direction: row;
-      }
 
-      .txt-container {
-       color: #000;
-        font-family: sans-serif;
-        font-weight: 900;
-        position: relative;
-       
-    }
-
-      
-
-/*--------------------------------------------------------Spotify link for Mobile Only*/
-.sptfy-1 {
-    position: absolute;
-       display: none;
-       padding: 8px;
-       top: 90px;
-}      
-/*-----------------------------------------------------------End-spotify*/
-.btn-gal{
-
-    background-color:transparent;
-    border: 2px solid #000;
-    border-radius: 3px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.4s;
-    margin: 32px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    }
-
-    .btn-gal a {
-        color: #000;
-        letter-spacing: 2px;
-        font-size: 14px;
-        font-weight: bolder;
-        font-family: sans-serif;
-        text-decoration: none;
-    }
-
-    .btn-gal:hover {
-        box-shadow: 0 2px 10px #000; 
-        background-color: #ff3b3f;
-         }
-
-    .btn-gal a:hover {
-        color: #252525;
-    }     
-
-    
-
-   .front-txt {
-        font-size: 25px;
-        font-weight: bolder;
-        font-family: "Architects Daughter", sans-serif;
-        text-shadow: 3px 2px #fff;
-        text-align: center;
-          }
-
-    .span {
-       font-weight: bolder;
-       font-size: 17px;
-       font-style: italic;
-       text-shadow: 1px 1px #fff;
-       text-align: center;
-       margin-top: 10px;
-    }
 /*--------------------------------------Gallery page image & text*/
 .gallery {
     display: flex;
@@ -748,48 +745,28 @@ footer {
         font-size: 23px;
     }
 
-    .front-img {
+    .img-box {
        display: none;
     }
 
+    .text-col h4 {
+        font-size: 15px;
+    }
+
+    .text-col .intro-text {
+        font-size: 14px;
+        }
+
+    .glry-btn {
+        font-size: 10px;
+    }
     .sptfy-1 {
         display: block;
         align-content: center;
         padding-left: 20px;
     }
 
-   .txt-container {
-       display: inline-block;
-       width: 100%;
-       vertical-align: middle;
-       position: absolute;
-       top: 340px;
-       left: 2px;
-       padding: 8px;
-        text-align: center;
-   }
-    .txt-container span {
-        font-size: 7px;
-       text-shadow: 0px 0px 1px #FF0000;
-           }
-
-    .front-txt{
-        margin-bottom: 0;
-    }       
-
-    .btn-gal{
-    padding: 4px 8px;
-    position: absolute;
-    overflow: hidden;
-    cursor: pointer;
-    top: 440px;
-    left: 113px;
-
-    margin-left: 0;
-    }
-    .btn-gal a{ 
-     font-size: 12px;
-}
+   
     .diag-left {
         display: none;
         }
