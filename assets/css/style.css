@@ -9,9 +9,13 @@ body{
     margin-bottom: 140px;
 }
 
+
+
 .base-img { 
-   
+   /*
     background-image:  url("../img/iceblue.jpg");
+    */
+    background-color: #EFEFEF;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
@@ -263,21 +267,19 @@ nav ul li{
 /*--------------------------------------index page image & text*/
 .intro-container {
     display: flex;
-    min-width: 700px;
     width: 100%;
-    height: 500px;
-       }
+    height: 80vh;
+             }
 
 .img-box {
     background-image: url("../img/fever-ray-fb.jpg");
-    position: relative;
+   position: relative;
     width: 90%;
-    height: 100%;
+    height: 80%;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-size: contain;
-    max-height: 95%;
-    bottom: 0;
+    background-size: cover;
+    margin-left: 20px;
 }
 
 .text-col {
@@ -299,12 +301,11 @@ nav ul li{
 
 
 .intro-text {
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 20px;
     font-weight: bold;
     text-shadow: 4px 4px 4px #fff;
-    
-}
+    }
 
 .glry-btn {
     font-size: 18px;
@@ -758,13 +759,12 @@ footer {
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-   border-radius: 50%;
-   }
+     }
 
 .abt-inner-container {
      padding: 15px;
     height: 100%;
-}
+    }
 
 .abt-inner-container h1 {
    font-family: "Architects Daughter", sans-serif;
