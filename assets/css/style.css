@@ -21,7 +21,7 @@ body{
 /*------------------------------------------------------------Logo & Nav Bar*/
 
 nav {position: relative;
-    padding: 50px 20px 200px 20px;
+    padding: 50px 20px 150px 20px;
     top: 0;
    }
 
@@ -97,14 +97,11 @@ nav ul li a {
 
 
 
-
-
-
-
-
-
 /*----------------------------------------------------------------------*/
 /*-----------------------------------------------------------Media Query*/
+
+
+
 
 @media screen and (max-width: 993px) {
     nav {
@@ -148,7 +145,7 @@ nav ul li{
      }
 
 
-     /*--------------------------------------------^^^^ width:100%; Bug to check
+     /*--------------------------------------------^^^^ width:100%; Bug to check?
     }        
     */
     .nav-wrapper ul li {
@@ -227,6 +224,7 @@ nav ul li{
 /*-------------------------------------------------------------------------*/
 /*----------------------------------------------------------BurgerIcon setting*/
 
+
 #nav:checked + .nav-btn{
     transform: rotate(45deg);
 }
@@ -265,44 +263,47 @@ nav ul li{
 /*--------------------------------------index page image & text*/
 .intro-container {
     display: flex;
+    min-width: 700px;
     width: 100%;
-    height: 600px;
-    
-}
+    height: 500px;
+       }
 
 .img-box {
     background-image: url("../img/fever-ray-fb.jpg");
-    width: 100%;
-    max-width: 500px;
-    max-height: 600px;
-    background-size: contain;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
     background-repeat: no-repeat;
-    margin-left: 50px;
-    border-radius: 10%;
-      
+    background-size: contain;
+    max-height: 95%;
+    bottom: 0;
 }
 
 .text-col {
     padding: 15px;
-    height: 80%;
+    height: 100%;
+     text-decoration: none;
 }
 
 .text-col h4 {
     font-family: "Architects Daughter", sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
     color: #ff3b3f;
     text-shadow: 1px 2px 2px #000;
     letter-spacing: 1.4px;
     margin-left: 20px;
+    text-align: center;
 }
+
 
 .intro-text {
     font-size: 18px;
     margin: 10px 20px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px #ff3b3f;
-    text-align: justify;
+    text-shadow: 4px 4px 4px #fff;
+    
 }
 
 .glry-btn {
@@ -317,19 +318,39 @@ nav ul li{
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 10px #FF3B3F;
+    box-shadow: 0 0 4px #FF3B3F;
    align-content: center;
     margin-left: 20px;
+    border: 1px solid #000;
 }
-/*--------------------------------------------------------Spotify link for Mobile Only*/
 
-.sptfy-1 {
-    position: absolute;
-       display: none;
-       padding: 8px;
-       top: 90px;
-}      
-/*-----------------------------------------------------------End-spotify*/
+
+.glry-btn:hover {
+    background-color: silver;
+     text-decoration: none;
+    }
+
+.glry-btn:active {
+  background-color: #fff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+
+.spotify {
+    display: flex;
+    float: right;
+    margin: 20px 40px 20px 20px;
+    align-items: center;
+    justify-content: center;
+       }
+
+   .spotify .sptfy-1 {
+              margin: 15px;
+   }
+
+   .spotify .sptfy-2 {
+              margin: 15px;
+   }
 
 /*-------------------------------------------------------------*/
 /*-------------------------------------------------Footer area*/
@@ -698,8 +719,7 @@ footer {
     transform: scale(0.5, 0.35) translateY(-650px);
     border-radius: 40%;
 }
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------- End List of Gallery Photos*/
+
 
 .card a {
     position: absolute;
@@ -714,23 +734,255 @@ footer {
     text-align: center;
 }
 
-/*--------------------------------------------------------------Tablet Screen*/
-@media screen and (max-width: 993px) {
-.front-img {
-    float: left;
-    background: url("../img/fever-ray-fb.jpg");
-    width: 400px;
-    height: 400px;
+/*-----------------------------------------^^^^^ End List of Gallery Photos*/
+/*-------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------About Page: */
+
+.abt-container {
+    display: flex;
+    min-width: 900px;
+    width: 100%;
+    height: 500px;
+    background: #EFEFEF;
+}
+  
+
+.abt-pic {
+    background-image: url("../img/woman-neon.jpg");
+   position: relative;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+   border-radius: 50%;
+   }
+
+.abt-inner-container {
+     padding: 15px;
+    height: 100%;
+}
+
+.abt-inner-container h1 {
+   font-family: "Architects Daughter", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #ff3b3f;
+    text-shadow: 1px 2px 2px #000;
+    letter-spacing: 1.4px;
+    margin-left: 20px;
+    
+}
+
+.abt-text {
+     font-size: 18px;
+    margin: 10px 20px;
+    font-weight: bold;
+  
+    text-align: justify;
+    padding: 15px 10px;
+}
+
+.abt-btn {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background: #333333;
+    color: #A9A9A9;
+    width: 120px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #FF3B3F;
+    align-content: center;
+    margin: 20px 30px;
+}
+
+.abt-btn:hover {
+    background-color: silver;
+     text-decoration: none;
+     }
+
+.abt-btn:active {
+  background-color: #fff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+/*--------------------------------------------------------------End AboutPage */
+
+/*---------------------------------------------------------------Contact Form */
+
+.cont-sctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+    width: 100%;
+    background: #EFEFEF;
     position: relative;
-    border-radius: 30%;
-    border: 1px solid #FF0000;
-    padding: 50px;
-    margin: 70px 70px 20px 20px;
-      }
+    top: 5px;
+    margin-bottom: 80px;
+}
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.contact-container .form-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.contact-container .form-box form {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+}
+
+.contact-container .form-box .form-style h3 {
+    color:#FF3B3F; 
+    font-weight: 500;
+    font-size: 40px;
+    font-family: "Architects Daughter", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+
+.contact-container .form-box .form-style .inputbox {
+    position: relative;
+    margin-bottom: 40px;
+    }
+
+.contact-container .form-box .form-style .inputbox:last-child    {
+    margin-bottom: 0px;
+}
+.contact-container .form-box .form-style .inputbox input,
+.contact-container .form-box .form-style .inputbox textarea {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color:#000; 
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid #CAEBF2;
+    resize: none;
+}
+
+.contact-container .form-box .form-style .inputbox textarea {
+    height: 100px;    
+}
+
+.contact-container .form-box .form-style .inputbox input[type="submit"] {
+    background: #A9A9A9; ;
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 100px;
+    cursor: pointer;
+    color: #FFF; 
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.contact-container .form-box .form-style .inputbox input[type="submit"]:focus {
+    background: #3f3e3e;
+    color: #fff;
+    box-shadow: 0 5px #FF3B3F;
+    transform: translateY(4px);
+}
+
+.contact-container .form-box .form-style .inputbox span {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: #A9A9A9;
+    transition: all 0.2s ;
+}
+
+.contact-container .form-box .form-style .inputbox input:focus ~ span ,
+.contact-container .form-box .form-style .inputbox textarea:focus ~ span,
+.contact-container .form-box .form-style .inputbox input:valid ~ span,
+.contact-container .form-box .form-style .inputbox textarea:valid ~ span {
+    transform: translateY(-24px);
+    color: #FF3B3F;
+    font-size: 14px;
+}
+
+.contact-container .form-box .form-style .inputbox input:focus,
+.contact-container .form-box .form-style .inputbox textarea:focus,
+.contact-container .form-box .form-style .inputbox input:valid,
+.contact-container .form-box .form-style .inputbox textarea:valid {
+
+    border-bottom-color: #FF3B3F; ;
+}
+
+.cont-imgbox {  
+    background-image: url("../img/notes.png");
+    position: relative;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 95%;
+    bottom: 0;
+}
+/*--------------------------------------Contact form Responsive area*/
+
+@media screen and (max-width: 991px)
+{
+.cont-sctn {
+    top: 100px
+
+}
+    
+.contact-container .form-box {
+    width: 100%;
+    padding: 0 10px;
+}
+.contact-container .form-box .form-style h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.contact-container .form-box .form-style {
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+}
+
+}
+
+
+
+
+
 /*--------------------------------------------------------------Small Screen*/
 @media screen and (max-width: 400px) {
     nav {
@@ -752,28 +1004,42 @@ footer {
         font-size: 23px;
     }
 
+.intro-container{
+    padding-top: 45px;
+}
+
+.text-col {
+    padding-bottom: 35px;
+}
+
     .img-box {
        display: none;
     }
 
     .text-col h4 {
-        font-size: 15px;
+        padding: 60px 0 30px 0;
+        font-size: 30px;
+        color: #FF0000;
+        letter-spacing: 2px;
+        text-shadow: none;
+        text-align: center;
     }
 
     .text-col .intro-text {
-        font-size: 14px;
+        font-size: 17px;
+        letter-spacing: 1.5px;
+        text-shadow: none;
         }
+
+    .spotify {
+       padding: 20px;
+    }
 
     .glry-btn {
         font-size: 10px;
+        margin-bottom: 25px;
     }
-    .sptfy-1 {
-        display: block;
-        align-content: center;
-        padding-left: 20px;
-    }
-
-   
+       
     .diag-left {
         display: none;
         }
@@ -782,7 +1048,7 @@ footer {
     }    
 
      footer {
-        position: absolute;
+        position: fixed;
         height: 12vh;
         bottom: 0;
         }
@@ -795,7 +1061,46 @@ footer {
         font-size: 14px;
         line-height: 1.2;
 }
+.contact-container {
+    margin: 10px;
+    height: 400px;
+    }
 
+.cont-sctn {
+    top: 1px;
+    min-height: 50vh;
+}
+
+.cont-imgbox {
+    display: none;
+}
+
+.contact-container .form-box .form-style .inputbox {
+    
+    margin-bottom: 30px;
+    }
+
+.contact-container .form-box .form-style .inputbox span{
+    font-size: 12px;
+}
+
+.contact-container .form-box .form-style h3 {
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.contact-container .form-box .form-style .inputbox textarea {
+    height: 80px;    
+}
+
+.contact-container .form-box .form-style .inputbox input[type="submit"] {
+font-size: 14px;
+}
+
+.contact-container .form-box .form-style .inputbox input,
+.contact-container .form-box .form-style .inputbox textarea {
+    font-size: 12px;
+    font-weight: 600;
 }
 
 
