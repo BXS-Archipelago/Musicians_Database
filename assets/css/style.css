@@ -272,19 +272,25 @@ nav ul li{
 
 .img-box {
     background-image: url("../img/fever-ray-fb.jpg");
-    position: relative;
+    background-position: relative;
+    max-height: 400px;
+    max-width: 400px;
     width: 90%;
-    height: 80%;
+    min-height: 390px;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     margin-left: 20px;
+    transition: all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out
 }
 
 .text-col {
     padding: 15px;
     height: 100%;
     text-decoration: none;
+    background-size: 100% auto;
 }
 
 .text-col h4 {
@@ -304,6 +310,7 @@ nav ul li{
     margin: 10px 20px;
     font-weight: bold;
     text-shadow: 4px 4px 4px #fff;
+    text-align: justify;
 }
 
 .glry-btn {
@@ -338,8 +345,8 @@ nav ul li{
 
 .spotify {
     display: flex;
-    float: right;
-    margin: 20px 40px 20px 20px;
+    position: relative;
+    margin: 40px 20px;
     align-items: center;
     justify-content: center;
 }
@@ -385,7 +392,7 @@ footer {
      font-family: "Architects Daughter", sans-serif;
     font-size: 25px;
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .tagline a {
@@ -397,6 +404,9 @@ footer {
    color:#eee2dc;
    text-decoration: none; 
    line-height: 2;
+   letter-spacing: 20px;
+   align-content: center;
+   text-align: justify;
 }
 
 .social-icons a:hover{
@@ -493,6 +503,8 @@ footer {
     cursor: pointer;
     color: #00008f;
 }
+
+
 
 /*-------------------------------------------------------------------*/
 /*--------------------------------------------List of Gallery Photos*/
@@ -717,14 +729,14 @@ footer {
 }
 
 
-.card a {
+.card .sptfy-link {
     position: absolute;
     bottom:-70px;
     font-size: 25px;
     color: #ff3b3f;
     background: #CAEBF2;
     width: 100%; 
-    padding: 12px 0;
+    padding: 12px 4px;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
@@ -950,10 +962,25 @@ footer {
     max-height: 95%;
     bottom: 0;
 }
-/*--------------------------------------Contact form Responsive area*/
+
+
+/*--------------------------------------------------------------------------*/
+/*------------------------------------------------------------ Template Page*/
+
+
+
+
+
+
+/*--------------------------------------------------------------------------*/
+/*---------------------------------------------------------- Responsive area*/
 
 @media screen and (max-width: 991px)
 {
+.img-box {
+    display: none;
+}    
+
 .cont-sctn {
     top: 100px
 }
@@ -973,10 +1000,18 @@ footer {
     padding: 0;
 }
 
+.tagline {
+        font-size: 14px;
+        letter-spacing: 2px;
 }
 
+.social-icons i {
+        font-size: 22px;
+        letter-spacing: 14px;
+        line-height: 1.2;
+}
 
-
+}
 
 
 /*--------------------------------------------------------------Small Screen*/
@@ -986,15 +1021,15 @@ nav {
 }
 
 .logo{
-    padding: 25px 25px;
+    padding: 35px 35px;
 }
 
 .logo-title {
-        font-size: 30px;
+        font-size: 40px;
 }
 
 .logo-title-strong {
-        font-size: 40px;
+        font-size: 50px;
 }
 
 nav ul li a {
@@ -1033,7 +1068,7 @@ nav ul li a {
 }
 
 .glry-btn {
-        font-size: 10px;
+        font-size: 16px;
         margin-bottom: 25px;
 }
        
@@ -1047,17 +1082,18 @@ nav ul li a {
 
 footer {
         position: fixed;
-        height: 12vh;
+        height: 15vh;
         bottom: 0;
 }
 
 .tagline {
-        font-size: 10px;
+        font-size: 14px;
         letter-spacing: 2px;
 }
 
 .social-icons i {
-        font-size: 14px;
+        font-size: 25px;
+        letter-spacing: 18px;
         line-height: 1.2;
 }
 .contact-container {
